@@ -13,7 +13,7 @@ button {
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(31, 53, 106);
+    background-color: rgb(28, 50, 82);
     display: flex;
 }
 
@@ -24,7 +24,7 @@ h1 {
 }
 
 .side-bar {
-    background-color: #202123;
+    background-color: #122134;
     width: 244px;
     height: 100vh;
     display: flex;
@@ -73,7 +73,12 @@ input:focus {
     outline: none;
 }
 
-input-container {
+.input-container {
+    position: relative;
     width: 100%;
     max-width: 650px;
+}
+
+.input-container #submit {
+    position: absolute;
 }
