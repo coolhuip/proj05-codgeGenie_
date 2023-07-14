@@ -11,6 +11,7 @@ button {
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
+    size: 200%;
 }
 
 
@@ -25,6 +26,7 @@ h1 {
     font-size: 33px;
     font-weight: 600;
     padding: 200px 0;
+    user-select: none;
 }
 
 .side-bar {
@@ -94,6 +96,10 @@ nav {
     border-top: solid 0.5px rgba(255, 255, 255, 0.5);
     padding: 10px;
     margin: 10px;
+}
+
+#output {
+    padding: 0 75px;
 }
 
 .history {
