@@ -1,17 +1,16 @@
-// const API_KEY = 
+const submitButton = document.querySelector('#submit')      // id
+const outputElement = document.querySelector('#output')     // id
+const inputElement = document.querySelector('input')        // tag
+const historyElement = document.querySelector('.history')   // class
 
-
-const submitButton = document.querySelector('#submit')
-const outputElement = document.querySelector('#output')
-const inputElement = document.querySelector('input')
-const historyElement = document.querySelector('.history')
 
 async function getMessage() {
     console.log('clicked')
+
     const options = {
         method: 'POST',
         headers: {
-            'Authorization': `Bearer ${API_KEY}`,
+            'Authorization': `Bearer ${key}`,
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
@@ -29,6 +28,7 @@ async function getMessage() {
         const data = await response.json()
         console.log(data)
         outputElement.textContent = data.choices[0].message.content
+        console.log()
         if (data.choices[0].message.content) {
             const pElement = document.createElement('p')
             pElement.textContent = inputElement.value
