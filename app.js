@@ -2,7 +2,13 @@ const submitButton = document.querySelector('#submit')      // id
 const outputElement = document.querySelector('#output')     // id
 const inputElement = document.querySelector('input')        // tag
 const historyElement = document.querySelector('.history')   // class
+const buttonElement = document.querySelector('button')
 
+
+function changeInput(val) {
+    const inputElement = document.querySelector('input')
+    inputElement.val = val
+}
 
 async function getMessage() {
     console.log('clicked')
@@ -29,9 +35,10 @@ async function getMessage() {
         console.log(data)
         outputElement.textContent = data.choices[0].message.content
         console.log()
-        if (data.choices[0].message.content) {
+        if (data.choices[0].message.content && inputElement.value) {
             const pElement = document.createElement('p')
             pElement.textContent = inputElement.value
+            pElement.addEventListener('click', changeInput(pElement.textContent))
             historyElement.append(pElement)
         }
     } catch (e) {
@@ -39,4 +46,15 @@ async function getMessage() {
     }
 }
 
-submitButton.addEventListener('click', getMessage)
+function clearInput() {
+    inputElement.value = ''
+}
+
+function main() {
+    submitButton.addEventListener('click', getMessage)
+    buttonElement.addEventListener('click', clearInput)
+}
+
+
+// Client Code
+main()
