@@ -1,8 +1,8 @@
 const submitButton = document.querySelector('#submit')      // id
 const outputElement = document.querySelector('#output')     // id
 const inputElement = document.querySelector('input')        // tag
+const buttonElement = document.querySelector('button')      // tag
 const historyElement = document.querySelector('.history')   // class
-const buttonElement = document.querySelector('button')
 
 
 function changeInput(val) {
