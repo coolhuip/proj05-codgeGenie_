@@ -1,0 +1,11 @@
+{
+  "name": "server-codgegenie",
+  "version": "1.0.0",
+  "description": "This is my attempt to create what is essentially a ChatGPT clone.<br>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
