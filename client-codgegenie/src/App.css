@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   display: flex;
-  background-color: #282c34;
+  background-color: #262a32;
   color: white;
   position: absolute;
   top:0;bottom:0;right:0;left:0;
@@ -10,7 +10,7 @@
 .side-menu {
   width: 260px;
   padding: 10px;
-  background-color: #202123;
+  background-color: #1f1f21;
 }
 
 .side-menu-button {
@@ -53,11 +53,11 @@
 }
 
 .chat-input-textarea {
-  background-color: #40414f;
+  background-color: #373743;
   padding: 12px;
   width: 90%;
   border-radius: 5px;
-  color: white;
+  color: rgb(195, 195, 195);
   font-size: 1.25em;
   border: none;
   outline: none;
