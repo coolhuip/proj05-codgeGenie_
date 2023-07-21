@@ -2,10 +2,6 @@ import './normalize.css';
 import './App.css';
 
 
-/* TODO: 
- *         Continue video from 24:24
- */
-
 function App() {
   return (
     <div className="App">
@@ -25,6 +21,16 @@ function App() {
               </div>
               <div className="message">
                 Hello World
+              </div>
+            </div>
+          </div>
+          <div className="chat-message chatgpt">
+            <div className="center-chat-message">
+              <div className="avatar">
+                
+              </div>
+              <div className="message">
+                I am a chatbot.
               </div>
             </div>
           </div>
